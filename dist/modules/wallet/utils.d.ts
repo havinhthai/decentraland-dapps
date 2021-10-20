@@ -1,0 +1,11 @@
+import { ContractData } from 'decentraland-transactions';
+import { ChainId } from '@dcl/schemas';
+import { PopulatedTransaction, Contract, providers } from 'ethers';
+import { AddEthereumChainParameters, Wallet } from './types';
+export declare const getTransactionsApiUrl: () => string;
+export declare const setTransactionsApiUrl: (url: string) => string;
+export declare function fetchManaBalance(chainId: ChainId, address: string): Promise<number>;
+export declare function buildWallet(): Promise<Wallet>;
+export declare function getTargetNetworkProvider(chainId: ChainId): Promise<providers.Web3Provider>;
+export declare function sendTransaction(contract: ContractData, getPopulatedTransaction: (populateTransaction: Contract['populateTransaction']) => Promise<PopulatedTransaction>): Promise<string>;
+export declare function getAddEthereumChainParameters(chainId: ChainId): AddEthereumChainParameters;
