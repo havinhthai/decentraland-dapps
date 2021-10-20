@@ -1,5 +1,5 @@
 {
-  "name": "decentraland-dapps",
+  "name": "@wiicamp/decentraland-dapps",
   "version": "0.0.0-development",
   "dependencies": {
     "@0xsequence/multicall": "^0.25.1",
@@ -12,8 +12,8 @@
     "date-fns": "^1.29.0",
     "dcl-catalyst-client": "^4.0.6",
     "decentraland-connect": "^2.20.1",
-    "decentraland-transactions": "git+https://github.com/lampn9397/decentraland-transactions.git",
-    "decentraland-ui": "git+https://github.com/havinhthai/ui.git",
+    "@wiicamp/decentraland-transactions": "^0.0.0-development",
+    "@wiicamp/decentraland-ui": "^0.0.0-development",
     "flat": "^4.1.0",
     "react-intl": "^5.20.7",
     "redux-persistence": "^1.2.0",
