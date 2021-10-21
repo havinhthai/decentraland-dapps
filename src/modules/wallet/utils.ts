@@ -5,7 +5,7 @@ import {
   ContractName,
   getContract,
   sendMetaTransaction
-} from 'decentraland-transactions'
+} from '@wiicamp/decentraland-transactions'
 import { ChainId, getChainName } from '@dcl/schemas'
 import { PopulatedTransaction, Contract, providers, utils } from 'ethers'
 import {

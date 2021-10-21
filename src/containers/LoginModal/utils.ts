@@ -1,5 +1,5 @@
 import { ProviderType } from "decentraland-connect/dist/types";
-import { LoginModalOptionType } from "decentraland-ui/dist/components/LoginModal/LoginModal";
+import { LoginModalOptionType } from "@wiicamp/decentraland-ui/dist/components/LoginModal/LoginModal";
 import { isCoinbaseProvider, isCucumberProvider, isDapperProvider } from "../../lib/eth";
 
 const {

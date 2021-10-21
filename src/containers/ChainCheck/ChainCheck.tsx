@@ -1,5 +1,5 @@
 import React from 'react'
-import { Popup } from 'decentraland-ui'
+import { Popup } from '@wiicamp/decentraland-ui'
 import { T } from '../../modules/translation/utils'
 import { getConnectedProviderChainId } from '../../lib/eth'
 import { Props } from './ChainCheck.types'
