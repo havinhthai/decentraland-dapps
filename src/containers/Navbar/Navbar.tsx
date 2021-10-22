@@ -6,6 +6,7 @@ import {
   Navbar as NavbarComponent,
   NavbarI18N
 } from '@wiicamp/decentraland-ui'
+<<<<<<< HEAD
 import { ProviderType } from 'decentraland-connect'
 import { getChainName } from '@dcl/schemas'
 import {
@@ -13,6 +14,11 @@ import {
   getConnectedProviderType
 } from '../../lib/eth'
 import { T, t } from '../../modules/translation/utils'
+=======
+import { ChainId, getChainName } from '@dcl/schemas'
+import { getConnectedProviderChainId } from '../../lib/eth'
+import { T } from '../../modules/translation/utils'
+>>>>>>> 8c9beea (fix: Update LOM pacakges (done))
 import Modal from '../../containers/Modal'
 import ChainProvider from '../ChainProvider'
 import { NavbarProps } from './Navbar.types'

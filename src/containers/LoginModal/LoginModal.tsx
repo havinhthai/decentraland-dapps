@@ -4,7 +4,11 @@ import {
   LoginModalI18N,
   LoginModalOptionI18N,
   LoginModalOptionType
+<<<<<<< HEAD
 } from '@wiicamp/decentraland-ui/dist/components/LoginModal/LoginModal'
+=======
+} from '@wiicamp/decentraland-ui'
+>>>>>>> 8c9beea (fix: Update LOM pacakges (done))
 import { ProviderType, connection } from 'decentraland-connect'
 import { T, t } from '../../modules/translation/utils'
 import { DefaultProps, Props, State } from './LoginModal.types'

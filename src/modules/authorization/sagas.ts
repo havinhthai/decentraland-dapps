@@ -2,8 +2,20 @@ import { put, call, takeEvery } from 'redux-saga/effects'
 import { providers } from '@0xsequence/multicall'
 import { providers as ethersProviders, Contract, BigNumber } from 'ethers'
 import { Provider } from 'decentraland-connect'
+<<<<<<< HEAD
 import { ContractData, getContract } from '@wiicamp/decentraland-transactions'
 import { getNetworkProvider } from '../../lib/eth'
+=======
+import {
+  ContractData,
+  getContract,
+  sendMetaTransaction
+} from '@wiicamp/decentraland-transactions'
+import { getNetworkProvider, getConnectedProvider } from '../../lib/eth'
+import { getChainConfiguration } from '../../lib/chainConfiguration'
+import { ERC20, ERC20TransactionReceipt } from '../../contracts/ERC20'
+import { ERC721, ERC721TransactionReceipt } from '../../contracts/ERC721'
+>>>>>>> 8c9beea (fix: Update LOM pacakges (done))
 import { getTokenAmountToApprove, isValidType } from './utils'
 import {
   fetchAuthorizationsSuccess,
