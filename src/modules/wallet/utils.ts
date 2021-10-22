@@ -1,21 +1,8 @@
-<<<<<<< HEAD
-import { Eth } from 'web3x/eth'
-import { Address } from 'web3x/address'
-import {
-  ContractData,
-  ContractName,
-  getContract,
-  sendMetaTransaction
-} from '@wiicamp/decentraland-transactions'
-import { ChainId, getChainName } from '@dcl/schemas'
-import { PopulatedTransaction, Contract, providers, utils } from 'ethers'
-=======
 import { Eth } from 'web3x-es/eth'
 import { ChainId } from '@dcl/schemas'
 import { Address } from 'web3x-es/address'
 import { ContractName, getContract } from '@wiicamp/decentraland-transactions'
 import { Contract, providers, utils } from 'ethers'
->>>>>>> 8c9beea (fix: Update LOM pacakges (done))
 import {
   getConnectedProvider,
   getConnectedProviderChainId,

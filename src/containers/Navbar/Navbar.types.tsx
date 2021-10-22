@@ -1,15 +1,6 @@
 import { Dispatch } from 'redux'
 import { ChainId } from '@dcl/schemas'
 import { NavbarProps as NavbarComponentProps } from '@wiicamp/decentraland-ui'
-<<<<<<< HEAD
-import {
-  acceptNetworkPartialSupport,
-  AcceptNetworkPartialSupportAction,
-  disconnectWallet,
-  switchNetworkRequest,
-  SwitchNetworkRequestAction
-} from '../../modules/wallet/actions'
-=======
 
 export type WrongNetworkModalI18N = {
   wrongNetwork: {
@@ -17,7 +8,6 @@ export type WrongNetworkModalI18N = {
     message: React.ReactNode
   }
 }
->>>>>>> 8c9beea (fix: Update LOM pacakges (done))
 
 export type NavbarProps = NavbarComponentProps & {
   chainId?: ChainId

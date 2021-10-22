@@ -1,10 +1,6 @@
 {
   "name": "@wiicamp/decentraland-dapps",
-<<<<<<< HEAD
-  "version": "0.0.1-development",
-=======
   "version": "0.0.2-development",
->>>>>>> 8c9beea (fix: Update LOM pacakges (done))
   "dependencies": {
     "@0xsequence/multicall": "^0.25.1",
     "@0xsequence/relayer": "^0.25.1",
@@ -17,11 +13,7 @@
     "axios": "^0.21.1",
     "date-fns": "^1.29.0",
     "dcl-catalyst-client": "^4.0.6",
-<<<<<<< HEAD
-    "decentraland-connect": "^2.20.1",
-=======
     "decentraland-connect": "^2.18.0",
->>>>>>> 8c9beea (fix: Update LOM pacakges (done))
     "flat": "^4.1.0",
     "react-intl": "^5.20.7",
     "redux-persistence": "^1.2.0",
