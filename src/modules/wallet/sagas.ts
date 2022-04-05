@@ -10,12 +10,17 @@ import {
   select
 } from 'redux-saga/effects'
 import { ChainId } from '@dcl/schemas'
+<<<<<<< HEAD
 import { connection, Provider } from 'decentraland-connect'
 import {
   getConnectedProvider,
   isCucumberProvider,
   isValidChainId
 } from '../../lib/eth'
+=======
+import { connection } from '@wiicamp/decentraland-connect'
+import { isCucumberProvider, isValidChainId } from '../../lib/eth'
+>>>>>>> be1a26e (fix: update version 0.0.8-development)
 import {
   connectWalletSuccess,
   connectWalletFailure,

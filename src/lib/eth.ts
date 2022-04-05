@@ -1,7 +1,5 @@
-import { ChainId, Network } from '@dcl/schemas'
-import { providers } from 'ethers'
-import { connection, ProviderType, Provider } from 'decentraland-connect'
-import { getChainConfiguration } from './chainConfiguration'
+import { ChainId } from '@dcl/schemas'
+import { connection, ProviderType, Provider } from '@wiicamp/decentraland-connect'
 import { isMobile } from './utils'
 
 export type EthereumWindow = Window & {

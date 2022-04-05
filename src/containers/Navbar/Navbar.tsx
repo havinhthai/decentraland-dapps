@@ -6,13 +6,9 @@ import {
   Navbar as NavbarComponent,
   NavbarI18N
 } from '@wiicamp/decentraland-ui'
-import { ProviderType } from 'decentraland-connect'
-import { getChainName } from '@dcl/schemas'
-import {
-  getConnectedProviderChainId,
-  getConnectedProviderType
-} from '../../lib/eth'
-import { T, t } from '../../modules/translation/utils'
+import { ChainId, getChainName } from '@dcl/schemas'
+import { getConnectedProviderChainId } from '../../lib/eth'
+import { T } from '../../modules/translation/utils'
 import Modal from '../../containers/Modal'
 import ChainProvider from '../ChainProvider'
 import { NavbarProps } from './Navbar.types'

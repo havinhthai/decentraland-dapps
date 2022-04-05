@@ -1,9 +1,20 @@
 import { put, call, takeEvery } from 'redux-saga/effects'
 import { providers } from '@0xsequence/multicall'
 import { providers as ethersProviders, Contract, BigNumber } from 'ethers'
-import { Provider } from 'decentraland-connect'
-import { ContractData, getContract } from '@wiicamp/decentraland-transactions'
-import { getNetworkProvider } from '../../lib/eth'
+import { Eth } from 'web3x-es/eth'
+import { TxSend } from 'web3x-es/contract'
+import { Address } from 'web3x-es/address'
+import { Network } from '@dcl/schemas'
+import { Provider } from '@wiicamp/decentraland-connect'
+import {
+  ContractData,
+  getContract,
+  sendMetaTransaction
+} from '@wiicamp/decentraland-transactions'
+import { getNetworkProvider, getConnectedProvider } from '../../lib/eth'
+import { getChainConfiguration } from '../../lib/chainConfiguration'
+import { ERC20, ERC20TransactionReceipt } from '../../contracts/ERC20'
+import { ERC721, ERC721TransactionReceipt } from '../../contracts/ERC721'
 import { getTokenAmountToApprove, isValidType } from './utils'
 import {
   fetchAuthorizationsSuccess,
